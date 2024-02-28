@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
+import { FaBarsStaggered } from "react-icons/fa6";
 //#b46f40 orange
 // #164775 blue
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}  style={{ height: '100%' }}>
 
-    <header className="bg-white">
+    <header className="bg-white flex flex-row justify-between items-center">
     <div
             className="
             pointer-events-none
@@ -38,6 +39,9 @@ export default function RootLayout({ children }) {
               priority
             />
           </div>
+          <div className="p-4">
+          <FaBarsStaggered size={28} style={{color:'#b46f40'}} />
+          </div>
     </header>
 
       <main className="
@@ -53,7 +57,7 @@ export default function RootLayout({ children }) {
         {children}
       </main> 
         
-      <footer className="bg-white p-2 text-center w-[100%]">
+      <footer className="bg-[#164775] p-2 text-center w-[100%]">
         <div className="container mx-auto w-[100%]">
           <div className="
           flex 

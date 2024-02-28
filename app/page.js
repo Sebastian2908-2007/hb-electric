@@ -1,6 +1,7 @@
 import Image from "next/image";
 import hero from '../public/hb-electric-hero.webp';
 
+
 export default function Home() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function Home() {
         font-[encyclopaediea]
         text-xs
         min-[360px]:text-lg
-        bg-[#b46f40]
+        bg-[#164775]
         
         w-[40%]
         text-center
@@ -71,7 +72,15 @@ export default function Home() {
     flex-col
     items-center
     ">
-    <section className="container mx-auto my-14 px-4">
+    <section className="
+    container 
+    mx-auto 
+    my-4 
+    px-4
+    border-[#b46f40]
+    border-2
+    rounded-md
+    ">
         <h1 className="
         text-center
         text-3xl 
@@ -101,13 +110,21 @@ export default function Home() {
           <a className=" 
         font-[toroka] 
         text-lg
-        text-[#b46f40]
+        text-[#164775]
         " 
         href="tel:385-233-0350">Call 385-233-0350 to get started now</a>
         </p>
     </section>
     {/*<ServiceAreas/>*/}
-    <section className="container mx-auto my-14 px-4">
+    <section className="
+    container 
+    mx-auto 
+    my-14 
+    px-4
+    border-[#b46f40]
+    border-2
+    rounded-md
+    ">
     <h2 className="
     text-3xl 
     text-center
@@ -201,7 +218,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     px-4
     "
     >
-    <section className="mb-8 flex flex-col items-center" id="bic">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="bic"
+    >
         <h2 className="text-center text-3xl text-[#164775] mb-4  font-[encyclopaediea]">Electrical Installations</h2>
         <div className="
           relative
@@ -217,7 +244,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Wiring and rewiring</li>
         <li>Lighting installations (including LED lighting)</li>
         <li>Outlet and switch installations</li>
@@ -234,7 +261,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="mb-8 flex flex-col items-center" id="doors">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="doors"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Power Distribution</h2>
             <div className="
           relative
@@ -242,6 +279,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           w-[100%]
           
         ">
+
         {/*<Image
           className=""
           src={customDoor}
@@ -250,7 +288,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class=" list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Distribution panel installation and maintenance</li>
         <li>Sub-panel installations</li>
         <li>Transformer installations</li>
@@ -266,7 +304,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="mb-8 flex flex-col items-center" id="staircase">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="staircase"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Emergency Electrical Services</h2>
             <div className="
           relative
@@ -282,7 +330,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Emergency lighting installations</li>
         <li>Generator installations and maintenance</li>
         <li>Uninterruptible Power Supply (UPS) installations</li>
@@ -298,7 +346,18 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="text-center mb-8 flex flex-col items-center" id="flooring">
+    <section className="
+    text-center 
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="flooring"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Security and Safety Systems</h2>
             <div className="
           relative
@@ -314,7 +373,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Fire alarm system installations and maintenance</li>
         <li>Security system installations (CCTV, access control)</li>
         <li>Smoke and carbon monoxide detector installations</li>
@@ -329,7 +388,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="mb-8 flex flex-col items-center" id="restoration">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="restoration"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Data and Communication Systems</h2>
             <div className="
           relative
@@ -345,7 +414,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Structured cabling installations</li>
         <li>Data center electrical installations</li>
         <li>Telecommunication system installations</li>
@@ -360,7 +429,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="mb-8 flex flex-col items-center" id="millwork">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="millwork"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">HVAC Electrical Services</h2>
             <div className="
           relative
@@ -376,7 +455,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Installation and maintenance of electrical components in heating, ventilation, and air conditioning (HVAC) systems</li>
      </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
@@ -390,7 +469,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="mb-8 flex flex-col items-center" id="renovate">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="renovate"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Energy Efficiency Solutions</h2>
             <div className="
           relative
@@ -406,7 +495,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Energy audits</li>
         <li>Installation of energy-efficient lighting and appliances</li>
         <li>Power monitoring and management systems</li>
@@ -421,7 +510,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
           </p>
     </section>
 
-    <section className="mb-8 flex flex-col items-center" id="shelving">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="shelving"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Lighting Design and Control</h2>
             <div className="
           relative
@@ -437,7 +536,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Interior and exterior lighting design</li>
         <li>Lighting control system installations (smart lighting systems)</li>
     </ul>
@@ -454,7 +553,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
 
 
 
-    <section className="mb-8 flex flex-col items-center" id="shelving">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="shelving"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Electrical Maintenance</h2>
             <div className="
           relative
@@ -470,7 +579,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Regular inspections and maintenance of electrical systems</li>
         <li>Troubleshooting and repairs</li>
         <li>Electrical system upgrades</li>
@@ -484,7 +593,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-    <section className="mb-8 flex flex-col items-center" id="shelving">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="shelving"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Code Compliance and Inspections</h2>
             <div className="
           relative
@@ -500,7 +619,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Ensuring compliance with local electrical codes and regulations</li>
         <li>Conducting electrical inspections</li>
     </ul>
@@ -513,7 +632,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-    <section className="mb-8 flex flex-col items-center" id="shelving">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+     border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="shelving"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Specialized Installations</h2>
             <div className="
           relative
@@ -529,7 +658,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Installation of specialized equipment (e.g., machinery, industrial equipment)</li>
         <li>Power quality analysis and solutions</li>
     </ul>
@@ -542,7 +671,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-    <section className="mb-8 flex flex-col items-center" id="shelving">
+    <section className="
+    mb-8 
+    flex 
+    flex-col 
+    items-center
+    border-[#b46f40]
+    border-2
+    rounded-md
+    " 
+    id="shelving"
+    >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Tenant Improvements</h2>
             <div className="
           relative
@@ -558,7 +697,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul class="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside">
         <li>Electrical work to accommodate changes or improvements in commercial spaces</li>
         <li>Upgrades to meet the electrical needs of new tenants</li>
       </ul>
