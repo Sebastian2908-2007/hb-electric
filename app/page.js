@@ -212,7 +212,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={builtInCabinet}
-          alt="finishing team llc built in cabinets"
+          alt="HB electric built in electrical"
           sizes='80vw'
          
         />*/}
@@ -245,7 +245,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={customDoor}
-          alt="finishing team llc custom door"
+          alt="HB electric custom door"
           sizes='80vw'
          
         />*/}
@@ -277,7 +277,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={customStairs}
-          alt="finishing team llc custom staircase"
+          alt="HB electric custom staircase"
           sizes='80vw'
          
         />*/}
@@ -309,7 +309,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={woodenFloor}
-          alt="finishing team llc wooden flooring"
+          alt="HB electric wooden flooring"
           sizes='80vw'
          
         />*/}
@@ -340,7 +340,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={woodRestore}
-          alt="finishing team llc wood restoration and replication"
+          alt="HB electric wood restoration and replication"
           sizes='80vw'
          
         />*/}
@@ -371,7 +371,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={millwork}
-          alt="finishing team llc custom millwork"
+          alt="HB electric custom millwork"
           sizes='80vw'
          
         />*/}
@@ -401,7 +401,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={remodeling}
-          alt="finishing team llc home renovation and remodeling"
+          alt="HB electric home renovation and remodeling"
           sizes='80vw'
          
         />*/}
@@ -432,7 +432,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={shelving}
-          alt="custom shelving and storage from finishing team llc in utah"
+          alt="custom shelving and storage from HB electric in utah"
           sizes='80vw'
          
         />*/}
@@ -465,7 +465,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={shelving}
-          alt="custom shelving and storage from finishing team llc in utah"
+          alt="custom shelving and storage from HB electric in utah"
           sizes='80vw'
          
         />*/}
@@ -495,7 +495,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={shelving}
-          alt="custom shelving and storage from finishing team llc in utah"
+          alt="custom shelving and storage from HB electric in utah"
           sizes='80vw'
          
         />*/}
@@ -524,7 +524,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={shelving}
-          alt="custom shelving and storage from finishing team llc in utah"
+          alt="custom shelving and storage from HB electric in utah"
           sizes='80vw'
          
         />*/}
@@ -553,7 +553,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         {/*<Image
           className=""
           src={shelving}
-          alt="custom shelving and storage from finishing team llc in utah"
+          alt="custom shelving and storage from HB electric in utah"
           sizes='80vw'
          
         />*/}
