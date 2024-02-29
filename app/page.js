@@ -1,6 +1,7 @@
+'use client'
 import Image from "next/image";
 import hero from '../public/hb-electric-hero.webp';
-
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         text-[#ebebeb]
         p-1
         hover:bg-[#164775]
-        right-20 
+        right-[5.2rem] 
         bottom-16
         min-[360px]:right-[6.5rem]
         min-[360px]:bottom-24
@@ -77,8 +78,10 @@ export default function Home() {
     mx-auto 
     my-4 
     px-4
+    py-4
     border-[#b46f40]
-    border-2
+    shadow-lg
+    border
     rounded-md
     ">
         <h1 className="
@@ -90,22 +93,80 @@ export default function Home() {
         mb-4 
         min-[1024px]:text-center
         min-[1024px]:mb-12
-        ">Powering Utahs Progress: Transform Your Commercial Space with Tailored Electrical Solutions</h1>
-        <p className="text-center mb-6 font-[gill sans]   min-[1024px]:text-center min-[1024px]:p-12">
-        Elevate your commercial space with our custom electrical solutions in Utah. Our expert team specializes in designing
-         and implementing tailored electrical systems to meet your specific needs. Whether you require comprehensive wiring and rewiring,
-         efficient power distribution, or the installation of advanced security and safety systems, we've got you covered.
+        ">Powering Utahs Progress Transform Your Commercial
+         Space with Tailored Electrical Solutions
+         </h1>
+         <motion.div
+          initial="hidden"
+          whileInView="visible"
+          animate={{ opacity: 0 }}
+          transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
+         >
+        <p className="
+        text-center 
+        mb-6 
+        font-[gill sans]   
+        min-[1024px]:text-center 
+        min-[1024px]:p-12
+        ">
+        Elevate your commercial space with our custom electrical solutions in Utah.
+         Our expert team specializes in designing
+         and implementing tailored electrical systems to meet your specific needs.
         </p>
-        <p className="text-center mb-6 font-[gill sans]   min-[1024px]:text-center min-[1024px]:p-12">
-        Our skilled electricians ensure the seamless integration of data and communication systems, including structured cabling,
+        </motion.div>
+        <p className="
+        text-center 
+        mb-6 
+        font-[gill sans]   
+        min-[1024px]:text-center 
+        min-[1024px]:p-12
+        ">
+         Whether you require comprehensive wiring and rewiring,
+         efficient power distribution, or the installation of advanced security
+          and safety systems, we've got you covered.
+        </p>
+        <p className="
+        text-center 
+        mb-6 
+        font-[gill sans]   
+        min-[1024px]:text-center 
+        min-[1024px]:p-12
+        ">
+        Our skilled electricians ensure the seamless integration of data and communication systems,
+         including structured cabling,
          data center installations, and telecommunication setups.
-         We also offer HVAC electrical services, energy efficiency solutions, and specialized installations for machinery and equipment.
+        </p>
+        <p className="
+        text-center 
+        mb-6 
+        font-[gill sans]   
+        min-[1024px]:text-center 
+        min-[1024px]:p-12
+        ">
+        We also offer HVAC electrical services, energy efficiency solutions,
+          and specialized installations for machinery and equipment.
+        </p>
+        <p className="
+        text-center 
+        mb-6 
+        font-[gill sans]   
+        min-[1024px]:text-center 
+        min-[1024px]:p-12
+        ">
+           Trust us for reliable electrical maintenance, code compliance, and inspections,
+         ensuring a safe and efficient electrical
+         environment for your commercial endeavors.
         </p>
        
-        <p className="text-center mb-6 font-[gill sans]   min-[1024px]:text-center min-[1024px]:p-12">
-        Trust us for reliable electrical maintenance, code compliance, and inspections, ensuring a safe and efficient electrical
-         environment for your commercial endeavors.
-         Experience top-notch craftsmanship as we transform your space with innovative and custom electrical solutions in Utah.
+        <p className="
+        text-center 
+        mb-6 
+        font-[gill sans]   
+        min-[1024px]:text-center 
+        min-[1024px]:p-12
+        ">
+         Experience top-notch craftsmanship as we transform your
+          space with innovative and custom electrical solutions in Utah.
           &nbsp;
           <a className=" 
         font-[toroka] 
@@ -121,9 +182,11 @@ export default function Home() {
     mx-auto 
     my-14 
     px-4
+    py-4
     border-[#b46f40]
-    border-2
     rounded-md
+    shadow-lg
+    border
     ">
     <h2 className="
     text-3xl 
@@ -165,7 +228,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     min-[1024px]:mt-12
     min-[1024px]:mb-12
     ">
-    <ul className="list-disc pl-6 min-[1024px]:w-[50%]">
+    <ul className="list-disc pl-6 min-[1024px]:w-[50%] ">
         <li className="mb-2">
           <span className='font-bold text-[#164775]'>License and Certification:</span>
         &nbsp;
@@ -224,8 +287,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+    p-4
+     shadow-lg
+     border
     " 
     id="bic"
     >
@@ -267,8 +332,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="doors"
     >
@@ -310,8 +377,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="staircase"
     >
@@ -353,8 +422,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="flooring"
     >
@@ -394,8 +465,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="restoration"
     >
@@ -435,8 +508,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="millwork"
     >
@@ -475,8 +550,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="renovate"
     >
@@ -516,8 +593,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="shelving"
     >
@@ -559,8 +638,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="shelving"
     >
@@ -599,8 +680,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="shelving"
     >
@@ -638,8 +721,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
      border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+      shadow-lg
+     border
     " 
     id="shelving"
     >
@@ -677,8 +762,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     flex-col 
     items-center
     border-[#b46f40]
-    border-2
     rounded-md
+     p-4
+     shadow-lg
+     border
     " 
     id="shelving"
     >
