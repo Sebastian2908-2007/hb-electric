@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 //#b46f40 orange
 // #164775 blue
 const inter = Inter({ subsets: ["latin"] });
@@ -48,7 +49,7 @@ export default function RootLayout({ children }) {
       mainClass 
       flex 
       min-h-screen 
-      pb-[11rem]
+      pb-[3rem]
        max-w-[100%] 
       flex-col 
       items-center 
@@ -61,24 +62,111 @@ export default function RootLayout({ children }) {
         <div className="container mx-auto w-[100%]">
           <div className="
           flex 
-          flex-row 
+          flex-col 
           justify-evenly 
           mb-2 
           min-[1024px]:mb-8
           min-[1024px]:mt-4
           "
           >
+            <span className="
+            text-white 
+            font-[toroka] 
+            text-xl 
+            mb-2 
+            min-[412px]:text-2xl
+            min-[768px]:text-3xl
+            ">Contact us</span>
+            <div className="
+            min-[1024px]:flex
+            min-[1024px]:flex-row
+            min-[1024px]:items-center
+            ">
+            <div className="
+            flex 
+            flex-row 
+            items-center 
+            px-8 min-[360px]:px-14 
+            min-[412px]:px-28
+            min-[540px]:px-44
+            min-[768px]:px-64
+            min-[1024px]:px-8
+            ">
+            <span className="text-white font-[toroka]">Phone:</span>
+            &nbsp;
+            <a className=" 
+        font-[toroka] 
+        text-lg
+        text-white
+        " 
+        href="tel:385-233-0350">
+          385-233-0350
+          </a>
+            </div>
+            <div className="
+            flex 
+            flex-row 
+            items-center 
+            px-4 min-[360px]:px-10 
+            min-[412px]:px-20
+            min-[540px]:px-40
+            min-[768px]:px-64
+            min-[1024px]:pl-[32rem]
+            min-[1024px]:pr-0
+            min-[1280px]:pl-[46rem]
+            min-[1366px]:pl-[50rem]
+            min-[1920px]:pl-[66rem]
+            ">
+            <span className="text-white font-[toroka]">Email:</span>
+            &nbsp;
+            <a className=" 
+        font-[toroka] 
+        text-lg
+        text-white
+        " 
+        href="mailto:office@hbelectricutah.com">
+          office@hbelectricutah.com
+          </a>
+            </div>
+            </div>
           </div>
-          <div className="flex flex-col justify-between items-center w-full min-[540px]:flex-row">
-          <p className="text-[#fde1e2] text-[.6em] ">
+          <div className="flex flex-row justify-between items-center w-full">
+          <p className="text-[#b46f40] text-[.6em] ">
             &copy; {currentYear} HB Electric
           </p>
-          <p className="text-[#fde1e2] text-[.7em]">Built with ✊ by&nbsp;<a
-          className="text-[#fee084]"
-           href="https://topdev.tech/" 
-           target="_blank">TopDev_Tech
-           </a>
-          </p>
+          <a
+           href="https://www.facebook.com/hbelectric/"
+           target="_blank"
+           rel="noopener noreferrer"
+          className="p-4">
+          <FaFacebookSquare size={28} style={{color:'white'}}/>
+          </a>
+          <a
+            className="
+            pointer-events-none 
+            flex 
+            place-items-center 
+            gap-2 
+            p-2
+            font-[manhattan] 
+            lg:pointer-events-auto 
+            lg:p-0
+            text-[.65rem]
+            text-[#b46f40]
+            "
+            href="https://topdev.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            built By{" "}
+            <Image
+              src="/td.png"
+              alt="Tiny Topdev Tech Logo"
+              width={15}
+              height={15}
+              
+            />
+          </a>
           </div>
         </div>
       </footer>

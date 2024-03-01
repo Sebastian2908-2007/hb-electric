@@ -1,9 +1,13 @@
 'use client'
 import Image from "next/image";
-import hero from '../public/hb-electric-hero.webp';
-import { motion } from "framer-motion"
+import hero from '../public/second-body.webp';
+import firstBody from '../public/first-body.webp';
+import consider from '../public/considerations-2.webp';
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function Home() {
+  const scrollRef = useRef(null);
   return (
     <>
     <div className="
@@ -25,13 +29,14 @@ export default function Home() {
         text-xs
         min-[360px]:text-lg
         bg-[#164775]
-        
+        opacity-75
         w-[40%]
         text-center
         rounded-md
         text-[#ebebeb]
         p-1
         hover:bg-[#164775]
+        hover:opacity-100
         right-[5.2rem] 
         bottom-16
         min-[360px]:right-[6.5rem]
@@ -48,7 +53,7 @@ export default function Home() {
         min-[820px]:right-72
         min-[912px]:right-76
         min-[1024px]:bottom-96
-        min-[1024px]:right-94
+        min-[1024px]:right-[23rem]
         min-[1280px]:right-[26rem]
         min-[1280px]:bottom-[32rem]
         min-[1366px]:p-4
@@ -72,6 +77,9 @@ export default function Home() {
     flex
     flex-col
     items-center
+    min-[1024px]:p-14
+    min-[1280px]:p-28
+    min-[1920px]:p-48
     ">
     <section className="
     container 
@@ -82,7 +90,13 @@ export default function Home() {
     border-[#b46f40]
     shadow-lg
     border
+    md:border-4
     rounded-md
+    min-[1024px]:mt-14
+    min-[1024px]:flex
+    min-[1024px]:flex-col
+    min-[1024px]:items-center
+    min-[1920px]:mt-0
     ">
         <h1 className="
         text-center
@@ -92,78 +106,172 @@ export default function Home() {
         font-[encyclopaediea] 
         mb-4 
         min-[1024px]:text-center
-        min-[1024px]:mb-12
-        ">Powering Utahs Progress Transform Your Commercial
-         Space with Tailored Electrical Solutions
+        min-[1024px]:mb-8
+        min-[1920px]:mb-14
+       
+        ">
+          Power Utah's Progress with HB Electric Utah's most competent commercial and industrial electricians
          </h1>
+         <div className="
+          relative
+          flex 
+          w-[100%]
+          min-[1024px]:w-[80%]
+          mb-4
+          min-[1024px]:mb-8
+          min-[1920px]:mb-14
+        ">
+        <Image
+          className=""
+          src={firstBody}
+          alt="HB electric built in electrical"
+          sizes='80vw'
+         
+        />
+      </div>
          <motion.div
-          initial="hidden"
-          whileInView="visible"
-          animate={{ opacity: 0 }}
-          transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
          >
         <p className="
         text-center 
         mb-6 
-        font-[gill sans]   
+        font-[gillsans]   
         min-[1024px]:text-center 
-        min-[1024px]:p-12
+        md:px-24
+        min-[1024px]:px-36 
+        min-[1920px]:px-72
+        min-[1920px]:mb-14
         ">
         Elevate your commercial space with our custom electrical solutions in Utah.
          Our expert team specializes in designing
          and implementing tailored electrical systems to meet your specific needs.
         </p>
         </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
         <p className="
         text-center 
         mb-6 
-        font-[gill sans]   
+        font-[gillsans]   
         min-[1024px]:text-center 
-        min-[1024px]:p-12
+        md:px-24
+        min-[1024px]:px-36 
+        min-[1920px]:px-72
+        min-[1920px]:mb-14
         ">
          Whether you require comprehensive wiring and rewiring,
          efficient power distribution, or the installation of advanced security
           and safety systems, we've got you covered.
         </p>
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
         <p className="
         text-center 
         mb-6 
-        font-[gill sans]   
+        font-[gillsans]   
         min-[1024px]:text-center 
-        min-[1024px]:p-12
+        md:px-24
+        min-[1024px]:px-36 
+        min-[1920px]:px-72
+        min-[1920px]:mb-14
         ">
         Our skilled electricians ensure the seamless integration of data and communication systems,
          including structured cabling,
          data center installations, and telecommunication setups.
         </p>
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
         <p className="
         text-center 
         mb-6 
-        font-[gill sans]   
+        font-[gillsans]   
         min-[1024px]:text-center 
-        min-[1024px]:p-12
+        md:px-24
+        min-[1024px]:px-36 
+        min-[1920px]:px-72
+        min-[1920px]:mb-14
         ">
         We also offer HVAC electrical services, energy efficiency solutions,
           and specialized installations for machinery and equipment.
         </p>
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
         <p className="
         text-center 
         mb-6 
-        font-[gill sans]   
+        font-[gillsans]   
         min-[1024px]:text-center 
-        min-[1024px]:p-12
+        md:px-24
+        min-[1024px]:px-36 
+        min-[1920px]:px-72
+        min-[1920px]:mb-14
         ">
            Trust us for reliable electrical maintenance, code compliance, and inspections,
          ensuring a safe and efficient electrical
          environment for your commercial endeavors.
         </p>
-       
+       </motion.div>
+       <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
         <p className="
         text-center 
         mb-6 
-        font-[gill sans]   
+        font-[gillsans]   
         min-[1024px]:text-center 
-        min-[1024px]:p-12
+        md:px-24
+        min-[1024px]:px-36 
+        min-[1920px]:px-72
+        min-[1920px]:mb-14
         ">
          Experience top-notch craftsmanship as we transform your
           space with innovative and custom electrical solutions in Utah.
@@ -175,8 +283,9 @@ export default function Home() {
         " 
         href="tel:385-233-0350">Call 385-233-0350 to get started now</a>
         </p>
+        </motion.div>
     </section>
-    {/*<ServiceAreas/>*/}
+   
     <section className="
     container 
     mx-auto 
@@ -187,7 +296,21 @@ export default function Home() {
     rounded-md
     shadow-lg
     border
+    md:border-4
+    min-[1024px]:flex
+    min-[1024px]:flex-col
+    min-[1024px]:items-center
     ">
+       <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <h2 className="
     text-3xl 
     text-center
@@ -196,25 +319,68 @@ export default function Home() {
     font-bold 
     font-[encyclopaediea] 
     min-[1024px]:text-center
-    min-[1024px]:mb-12
+    min-[1024px]:mb-8
     ">Considerations When hiring a commercial electrician in Utah</h2>
-    <p className="text-center mb-6 font-[gill sans]   min-[1024px]:p-12">
+    </motion.div>
+    <div className="
+          relative
+          flex 
+          w-[100%]
+          mb-4
+          min-[1024px]:w-[80%]
+          min-[1024px]:mb-8
+        ">
+        <Image
+          className=""
+          src={consider}
+          alt="HB electric built in electrical"
+          sizes='80vw'
+         
+        />
+      </div>
+    <p className="
+    text-center 
+    mb-6 
+    font-[gillsans]    
+    md:px-24 min-[1024px]:px-36 
+    min-[1920px]:px-72">
     
 When hiring a commercial electrical contractor in Utah, it's crucial to consider key factors for
  a successful project.
  Verify the contractor's licenses and certifications to ensure compliance with state regulations.
     </p>
-    <p className="text-center mb-6 font-[gill sans]   min-[1024px]:p-12">
+    <p className="
+    text-center 
+    mb-6 
+    font-[gillsans]   
+    md:px-24 
+    min-[1024px]:px-36 
+    min-[1920px]:px-72
+    ">
     Evaluate their experience with similar projects to gauge proficiency in meeting the specific
      needs of commercial spaces. Seek references
      and reviews from previous clients to assess the contractor's reputation and work quality. 
     </p>
-    <p className="text-center mb-6 font-[gill sans]   min-[1024px]:p-12">
+    <p className="
+    text-center 
+    mb-6 
+    font-[gillsans]   
+    md:px-24 
+    min-[1024px]:px-36 
+    min-[1920px]:px-72
+    ">
     Additionally, confirm that the contractor carries adequate insurance coverage, including
      liability and worker's compensation, to protect all parties involved. Effective communication
      and responsiveness are essential attributes for smooth collaboration throughout the project
     </p>
-    <p className="text-center mb-6 font-[gill sans]   min-[1024px]:p-12">
+    <p className="
+    text-center 
+    mb-6 
+    font-[gillsans]   
+    md:px-24 
+    min-[1024px]:px-36 
+    min-[1920px]:px-72
+    ">
     Obtain a detailed and transparent cost estimate, along with a well-defined project timeline,
      for accurate budget planning and management. Lastly, ensure the contractor is familiar
      with local building codes and regulations in Utah to guarantee compliance and project success.
@@ -228,42 +394,119 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     min-[1024px]:mt-12
     min-[1024px]:mb-12
     ">
-    <ul className="list-disc pl-6 min-[1024px]:w-[50%] ">
-        <li className="mb-2">
+    <ul className="list-disc pl-6 min-[1024px]:w-[50%] font-[gillsans]">
+    <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>License and Certification:</span>
         &nbsp;
         Verify necessary licenses and certifications for commercial electrical work in Utah.
         </li>
-        <li className="mb-2">
+      </motion.div>
+      <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>Experience:</span>
         &nbsp;
         Evaluate experience with similar projects to ensure proficiency in commercial spaces.
         </li>
-        <li className="mb-2">
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>References and Reviews:</span>
         &nbsp;
         Seek client references and reviews to assess reputation and work quality.
         </li>
-        <li className="mb-2">
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>Insurance Coverage:</span>
         &nbsp;
         Confirm adequate insurance coverage, including liability and worker's compensation.
         </li>
-        <li className="mb-2">
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>Communication Skills:</span>
         &nbsp;
         Assess communication and responsiveness for effective collaboration.
         </li>
-        <li className="mb-2">
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>Transparent Cost Estimate:</span>
         &nbsp;
         Request a detailed cost estimate for accurate budget planning.
         </li>
-        <li className="mb-2">
+        </motion.div>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
+        <li className="mb-4">
           <span className='font-bold text-[#164775]'>Familiarity with Local Codes:</span>
         &nbsp;
         Confirm knowledge of and compliance with local building codes in Utah.
         </li>
+        </motion.div>
     </ul>
     </div>
     </section>
@@ -274,13 +517,23 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     grid-cols-1 
     md:grid-cols-2 
     lg:grid-cols-3 
+    
     gap-8 
     container 
     mx-auto 
     my-8 
     px-4
     "
-    >
+    > <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -291,10 +544,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     p-4
      shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="bic"
     >
-        <h2 className="text-center text-3xl text-[#164775] mb-4  font-[encyclopaediea]">Electrical Installations</h2>
+        <h2 className="text-center text-3xl text-[#164775] mb-8  font-[encyclopaediea]">Electrical Installations</h2>
         <div className="
           relative
           flex 
@@ -309,14 +564,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Wiring and rewiring</li>
-        <li>Lighting installations (including LED lighting)</li>
-        <li>Outlet and switch installations</li>
-        <li>Panel installations and upgrades</li>
-        <li>Circuit installations</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8 '>Wiring and rewiring</li>
+        <li className='mb-8'>Lighting installations (including LED lighting)</li>
+        <li className='mb-8'>Outlet and switch installations</li>
+        <li className='mb-8'>Panel installations and upgrades</li>
+        <li className='mb-8'>Circuit installations</li>
       </ul>
-          <p className="text-center mb-6 font-[gill sans]  ">
+          <p className="text-center mb-6">
           <a className=" 
         font-[toroka] 
         text-lg
@@ -325,7 +580,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -336,10 +601,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="doors"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Power Distribution</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Power Distribution</h2>
             <div className="
           relative
           flex 
@@ -355,11 +622,11 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Distribution panel installation and maintenance</li>
-        <li>Sub-panel installations</li>
-        <li>Transformer installations</li>
-        <li>Power factor correction</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Distribution panel installs and maintenance</li>
+        <li className='mb-8'>Sub-panel installations</li>
+        <li className='mb-8'>Transformer installs</li>
+        <li className='mb-8'>Power factor correction</li>
      </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -370,7 +637,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -381,10 +658,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="staircase"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Emergency Electrical Services</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Emergency Electrical Services</h2>
             <div className="
           relative
           flex 
@@ -399,10 +678,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Emergency lighting installations</li>
-        <li>Generator installations and maintenance</li>
-        <li>Uninterruptible Power Supply (UPS) installations</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Emergency lighting installations</li>
+        <li className='mb-8'>Generator installations and maintenance</li>
+        <li className='mb-8'>Uninterruptible Power Supply (UPS) installations</li>
      </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
          
@@ -414,7 +693,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     text-center 
     mb-8 
@@ -426,10 +715,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="flooring"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Security and Safety Systems</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Security and Safety Systems</h2>
             <div className="
           relative
           flex 
@@ -444,10 +735,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Fire alarm system installations and maintenance</li>
-        <li>Security system installations (CCTV, access control)</li>
-        <li>Smoke and carbon monoxide detector installations</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Fire alarm system installations and maintenance</li>
+        <li className='mb-8'>Security system installations (CCTV, access control)</li>
+        <li className='mb-8'>Smoke and carbon monoxide detector installations</li>
      </ul>
         <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -458,7 +749,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -469,10 +770,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="restoration"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Data and Communication Systems</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Data and Communication Systems</h2>
             <div className="
           relative
           flex 
@@ -487,10 +790,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Structured cabling installations</li>
-        <li>Data center electrical installations</li>
-        <li>Telecommunication system installations</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Structured cabling installations</li>
+        <li className='mb-8'>Data center electrical installations</li>
+        <li className='mb-8'>Telecommunication system installations</li>
     </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -501,7 +804,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -512,10 +825,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="millwork"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">HVAC Electrical Services</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">HVAC Electrical Services</h2>
             <div className="
           relative
           flex 
@@ -530,7 +845,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
         <li>Installation and maintenance of electrical components in heating, ventilation, and air conditioning (HVAC) systems</li>
      </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
@@ -543,7 +858,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -554,10 +879,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="renovate"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Energy Efficiency Solutions</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Energy Efficiency Solutions</h2>
             <div className="
           relative
           flex 
@@ -572,10 +899,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Energy audits</li>
-        <li>Installation of energy-efficient lighting and appliances</li>
-        <li>Power monitoring and management systems</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Energy audits</li>
+        <li className='mb-8'>Installation of energy-efficient lighting and appliances</li>
+        <li className='mb-8'>Power monitoring and management systems</li>
      </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -586,7 +913,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
-
+    </motion.div>
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -597,10 +934,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="shelving"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Lighting Design and Control</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Lighting Design and Control</h2>
             <div className="
           relative
           flex 
@@ -615,9 +954,9 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Interior and exterior lighting design</li>
-        <li>Lighting control system installations (smart lighting systems)</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Interior and exterior lighting design</li>
+        <li className='mb-8'>Lighting control system installations (smart lighting systems)</li>
     </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -628,9 +967,18 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
+    </motion.div>
 
-
-
+ <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
 
     <section className="
     mb-8 
@@ -642,10 +990,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="shelving"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Electrical Maintenance</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Electrical Maintenance</h2>
             <div className="
           relative
           flex 
@@ -660,10 +1010,10 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Regular inspections and maintenance of electrical systems</li>
-        <li>Troubleshooting and repairs</li>
-        <li>Electrical system upgrades</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Regular inspections and maintenance of electrical systems</li>
+        <li className='mb-8'>Troubleshooting and repairs</li>
+        <li className='mb-8'>Electrical system upgrades</li>
     </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -674,6 +1024,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
+    </motion.div>
+    <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -684,10 +1045,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="shelving"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Code Compliance and Inspections</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Code Compliance and Inspections</h2>
             <div className="
           relative
           flex 
@@ -702,9 +1065,9 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Ensuring compliance with local electrical codes and regulations</li>
-        <li>Conducting electrical inspections</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Ensuring compliance with local electrical codes and regulations</li>
+        <li className='mb-8'>Conducting electrical inspections</li>
     </ul>
           <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -715,6 +1078,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
+    </motion.div>
+    <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -725,10 +1099,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="shelving"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Specialized Installations</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Specialized Installations</h2>
             <div className="
           relative
           flex 
@@ -743,9 +1119,9 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Installation of specialized equipment (e.g., machinery, industrial equipment)</li>
-        <li>Power quality analysis and solutions</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Installation of specialized equipment (e.g., machinery, industrial equipment)</li>
+        <li className='mb-8'>Power quality analysis and solutions</li>
     </ul>
         <p className="text-center mb-6 font-[gill sans]  ">
           <a className=" 
@@ -756,6 +1132,17 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
+    </motion.div>
+    <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 }
+            }}
+         >
     <section className="
     mb-8 
     flex 
@@ -766,10 +1153,12 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
      shadow-lg
      border
+     md:border-4
+     h-full
     " 
     id="shelving"
     >
-        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-4">Tenant Improvements</h2>
+        <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Tenant Improvements</h2>
             <div className="
           relative
           flex 
@@ -784,9 +1173,9 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
          
         />*/}
       </div>
-      <ul className="ml-4 list-disc list-inside">
-        <li>Electrical work to accommodate changes or improvements in commercial spaces</li>
-        <li>Upgrades to meet the electrical needs of new tenants</li>
+      <ul className="ml-4 list-disc list-inside font-[macklin] w-full">
+        <li className='mb-8'>Electrical work to accommodate changes or improvements in commercial spaces</li>
+        <li className='mb-8'>Upgrades to meet the electrical needs of new tenants</li>
       </ul>
         
           <p className="text-center mb-6 font-[gill sans]  ">
@@ -798,6 +1187,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
         href="tel:385-233-0350">Learn More...</a>
           </p>
     </section>
+    </motion.div>
 </div>
 
       
