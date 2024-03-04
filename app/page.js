@@ -547,7 +547,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="bic"
+    id="ei"
     >
         <h2 className="text-center text-3xl text-[#164775] mb-8  font-[encyclopaediea]">Electrical Installations</h2>
         <div className="
@@ -604,7 +604,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="doors"
+    id="pd"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Power Distribution</h2>
             <div className="
@@ -661,7 +661,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="staircase"
+    id="emes"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Emergency Electrical Services</h2>
             <div className="
@@ -718,7 +718,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="flooring"
+    id="sss"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Security and Safety Systems</h2>
             <div className="
@@ -773,7 +773,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="restoration"
+    id="dcs"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Data and Communication Systems</h2>
             <div className="
@@ -828,7 +828,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="millwork"
+    id="hes"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">HVAC Electrical Services</h2>
             <div className="
@@ -882,7 +882,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="renovate"
+    id="ees"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Energy Efficiency Solutions</h2>
             <div className="
@@ -937,7 +937,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="shelving"
+    id="ldc"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Lighting Design and Control</h2>
             <div className="
@@ -993,7 +993,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="shelving"
+    id="em"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Electrical Maintenance</h2>
             <div className="
@@ -1048,7 +1048,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="shelving"
+    id="cci"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Code Compliance and Inspections</h2>
             <div className="
@@ -1102,7 +1102,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="shelving"
+    id="si"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Specialized Installations</h2>
             <div className="
@@ -1156,7 +1156,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      md:border-4
      h-full
     " 
-    id="shelving"
+    id="ti"
     >
         <h2 className="text-center text-3xl text-[#164775] font-[encyclopaediea]  mb-8">Tenant Improvements</h2>
             <div className="

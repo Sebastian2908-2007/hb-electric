@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
-import { FaBarsStaggered } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
+import Dropdown from "@/components/Dropdown";
 //#b46f40 orange
 // #164775 blue
 const inter = Inter({ subsets: ["latin"] });
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             />
           </div>
           <div className="p-4">
-          <FaBarsStaggered size={28} style={{color:'#b46f40'}} />
+          <Dropdown/>
           </div>
     </header>
 
