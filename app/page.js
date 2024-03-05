@@ -2,7 +2,7 @@
 import Image from "next/image";
 import hero from '../public/second-body.webp';
 import firstBody from '../public/first-body.webp';
-import consider from '../public/considerations-2.webp';
+import consider from '../public/considerations3.webp';
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -110,7 +110,7 @@ export default function Home() {
         min-[1920px]:mb-14
        
         ">
-          Power Utah's Progress with HB Electric Utah's most competent commercial and industrial electricians
+          Power Utah's Progress with HB Electric the most competent commercial and industrial electricians
          </h1>
          <div className="
           relative
