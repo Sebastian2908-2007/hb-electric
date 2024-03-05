@@ -91,7 +91,7 @@ export default function RootLayout({ children }) {
             text-white 
             font-[toroka] 
             text-xl 
-            mb-2 
+            mb-4 
             min-[412px]:text-2xl
             min-[768px]:text-3xl
             underline
@@ -111,6 +111,7 @@ export default function RootLayout({ children }) {
             min-[540px]:px-44
             min-[768px]:px-64
             min-[1024px]:px-8
+            mb-4
             ">
             <span className="text-white font-[toroka]">Phone:</span>
             &nbsp;
@@ -153,10 +154,11 @@ export default function RootLayout({ children }) {
             </div>
           </div>
           <div className="flex flex-row justify-between items-center w-full">
-          <p className="text-[#b46f40] text-[.6em] ">
+          <p className="text-white text-[.6em] ">
             &copy; {currentYear} HB Electric
           </p>
           <a
+          alt='facebook page for HB Electric'
            href="https://www.facebook.com/hbelectric/"
            target="_blank"
            rel="noopener noreferrer"
@@ -174,7 +176,7 @@ export default function RootLayout({ children }) {
             lg:pointer-events-auto 
             lg:p-0
             text-[.65rem]
-            text-[#b46f40]
+            text-white
             "
             href="https://topdev.tech/"
             target="_blank"

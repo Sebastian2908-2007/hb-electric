@@ -395,6 +395,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     min-[1024px]:mb-12
     ">
     <ul className="list-disc pl-6 min-[1024px]:w-[50%] font-[gillsans]">
+      <li>
     <motion.div
             initial="hidden"
             whileInView="visible"
@@ -405,12 +406,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>License and Certification:</span>
         &nbsp;
         Verify necessary licenses and certifications for commercial electrical work in Utah.
-        </li>
+        </div>
       </motion.div>
+      </li>
+      <li>
       <motion.div
             initial="hidden"
             whileInView="visible"
@@ -421,12 +424,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>Experience:</span>
         &nbsp;
         Evaluate experience with similar projects to ensure proficiency in commercial spaces.
-        </li>
+        </div>
         </motion.div>
+        </li>
+        <li>
         <motion.div
             initial="hidden"
             whileInView="visible"
@@ -437,12 +442,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>References and Reviews:</span>
         &nbsp;
         Seek client references and reviews to assess reputation and work quality.
-        </li>
+        </div>
         </motion.div>
+        </li>
+        <li>
         <motion.div
             initial="hidden"
             whileInView="visible"
@@ -453,12 +460,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>Insurance Coverage:</span>
         &nbsp;
         Confirm adequate insurance coverage, including liability and worker's compensation.
-        </li>
+        </div>
         </motion.div>
+        </li>
+        <li>
         <motion.div
             initial="hidden"
             whileInView="visible"
@@ -469,12 +478,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>Communication Skills:</span>
         &nbsp;
         Assess communication and responsiveness for effective collaboration.
-        </li>
+        </div>
         </motion.div>
+        </li>
+        <li>
         <motion.div
             initial="hidden"
             whileInView="visible"
@@ -485,12 +496,14 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>Transparent Cost Estimate:</span>
         &nbsp;
         Request a detailed cost estimate for accurate budget planning.
-        </li>
+        </div>
         </motion.div>
+        </li>
+        <li>
         <motion.div
             initial="hidden"
             whileInView="visible"
@@ -501,12 +514,13 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <li className="mb-4">
+        <div className="mb-4">
           <span className='font-bold text-[#164775]'>Familiarity with Local Codes:</span>
         &nbsp;
         Confirm knowledge of and compliance with local building codes in Utah.
-        </li>
+        </div>
         </motion.div>
+        </li>
     </ul>
     </div>
     </section>
