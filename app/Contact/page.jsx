@@ -1,5 +1,5 @@
 'use client'
-import { useState,useEffect } from "react";
+import { useState } from "react";
 const Contact = () => {
      // form state
      const [formData,setFormData] = useState({name:'',email:'',phone:'',description:''});
@@ -15,10 +15,7 @@ const Contact = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const {name,email,phone,description} = formData;
-        console.log(name,'destructured');
-        console.log(email,'destructured');
-        console.log(phone,'destructured');
-        console.log(description,'destructured');
+       
         try{
       const response = await fetch('/api/Email',{
             method: 'POST',
@@ -26,14 +23,14 @@ const Contact = () => {
             body: JSON.stringify({ email:email, name:name, phone:phone, description:description }),
         });
         if(response.ok) {
-            //window.location.reload();
+            window.location.reload();
         }
     }catch(e) {
         console.log(e);
     }
         console.log('submitted');
     };
-useEffect(() => {console.log(formData)},[formData])
+
     return(
         
         <div className="

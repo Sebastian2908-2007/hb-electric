@@ -13,7 +13,6 @@ import * as React from "react";
 
 
 export default function LeadEmail({email, name,phone,description}) {
-    console.log(email, name,phone,description,'EMAIL DATA in email+');
   return (
     <Html lang="en" dir="ltr">
       <Container
