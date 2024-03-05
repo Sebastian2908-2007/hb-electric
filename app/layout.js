@@ -158,7 +158,7 @@ export default function RootLayout({ children }) {
             &copy; {currentYear} HB Electric
           </p>
           <a
-          alt='facebook page for HB Electric'
+          aria-label='facebook page for HB Electric'
            href="https://www.facebook.com/hbelectric/"
            target="_blank"
            rel="noopener noreferrer"
