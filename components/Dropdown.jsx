@@ -1,6 +1,7 @@
 'use client';
 import { useState,useEffect, useRef  } from 'react';
 import { FaBarsStaggered } from "react-icons/fa6";
+import Link from 'next/link';
 //hover coler #fde1e2
 const Dropdown = () => {
 
@@ -69,6 +70,31 @@ const Dropdown = () => {
           ref={dropdownRef}>
         
          <>
+
+         <Link
+         onClick={() => {
+          closeDropdown();
+         }}
+         href='/Contact'   
+            className="
+            block 
+            px-4 
+            py-2 
+            text-[.8em] 
+            text-[#164775] 
+            hover:bg-[#b46f40]
+            hover:text-[#d9b061]
+            
+             
+            font-[encyclopaediea]
+            " 
+           
+          
+            >
+              Contact Us
+            </Link>
+
+
          <span   
             className="
             block 
@@ -76,7 +102,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57]
+            hover:bg-[#b46f40]
             hover:text-[#d9b061]
             
              
@@ -101,7 +127,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
             
              
@@ -129,7 +155,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57]
+            hover:bg-[#b46f40]
             hover:text-[#d9b061]
              
             font-[encyclopaediea]
@@ -153,7 +179,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
            
             font-[encyclopaediea]
@@ -177,7 +203,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
            
             font-[encyclopaediea]
@@ -202,7 +228,7 @@ const Dropdown = () => {
              py-2 
              text-[.8em] 
              text-[#164775] 
-             hover:bg-[#8d6f57] 
+             hover:bg-[#b46f40] 
              hover:text-[#d9b061]
             
             font-[encyclopaediea]
@@ -225,7 +251,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
             
             font-[encyclopaediea]
@@ -249,7 +275,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
            
             font-[encyclopaediea]
@@ -274,7 +300,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
            
            
@@ -300,7 +326,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
            
            
@@ -325,7 +351,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
           
             font-[encyclopaediea]
@@ -349,7 +375,7 @@ const Dropdown = () => {
             py-2 
             text-[.8em] 
             text-[#164775] 
-            hover:bg-[#8d6f57] 
+            hover:bg-[#b46f40] 
             hover:text-[#d9b061]
             
              

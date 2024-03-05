@@ -54,18 +54,18 @@ export default function Home() {
         min-[912px]:right-76
         min-[1024px]:bottom-96
         min-[1024px]:right-[23rem]
-        min-[1280px]:right-[26rem]
-        min-[1280px]:bottom-[32rem]
+        min-[1280px]:right-[28rem]
+        min-[1280px]:bottom-[22rem]
         min-[1366px]:p-4
         min-[1366px]:text-2xl
-        min-[1366px]:right-[28rem]
-        min-[1366px]:bottom-[35rem]
-        min-[1920px]:right-[50rem]
-        min-[1920px]:bottom-[52rem]
+        min-[1366px]:right-[30rem]
+        min-[1366px]:bottom-[25rem]
+        min-[1920px]:right-[48rem]
+        min-[1920px]:bottom-[42rem]
         min-[1920px]:w-[20%]
-        min-[2400px]:right-[72rem]
-        min-[2400px]:bottom-[62rem]
-        min-[2400px]:w-[15%]
+        min-[2560px]:right-[70rem]
+        min-[2560px]:bottom-[52rem]
+        min-[2560px]:w-[15%]
         " 
         href="tel:385-233-0350">Click To Call Now</a>
        

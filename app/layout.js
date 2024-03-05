@@ -3,6 +3,7 @@ import Image from "next/image";
 import "./globals.css";
 import { FaFacebookSquare } from "react-icons/fa";
 import Dropdown from "@/components/Dropdown";
+import Link from "next/link";
 //#b46f40 orange
 // #164775 blue
 const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +19,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}  style={{ height: '100%' }}>
 
     <header className="bg-white flex flex-row justify-between items-center">
-    <div
+    <Link
+    href='/'
             className="
             pointer-events-none
             flex place-items-center  
@@ -39,7 +41,7 @@ export default function RootLayout({ children }) {
               height={24}
               priority
             />
-          </div>
+          </Link>
           <div className="p-4">
           <Dropdown/>
           </div>
@@ -69,14 +71,16 @@ export default function RootLayout({ children }) {
           min-[1024px]:mt-4
           "
           >
-            <span className="
+            <Link href='/Contact' className="
             text-white 
             font-[toroka] 
             text-xl 
             mb-2 
             min-[412px]:text-2xl
             min-[768px]:text-3xl
-            ">Contact us</span>
+            underline
+            hover:text-[#b46f40]
+            ">Contact us</Link>
             <div className="
             min-[1024px]:flex
             min-[1024px]:flex-row
@@ -98,6 +102,7 @@ export default function RootLayout({ children }) {
         font-[toroka] 
         text-lg
         text-white
+        hover:text-[#b46f40]
         " 
         href="tel:385-233-0350">
           385-233-0350
@@ -123,6 +128,7 @@ export default function RootLayout({ children }) {
         font-[toroka] 
         text-lg
         text-white
+        hover:text-[#b46f40]
         " 
         href="mailto:office@hbelectricutah.com">
           office@hbelectricutah.com
@@ -138,7 +144,7 @@ export default function RootLayout({ children }) {
            href="https://www.facebook.com/hbelectric/"
            target="_blank"
            rel="noopener noreferrer"
-          className="p-4">
+          className="p-4 hover:bg-[#b46f40] rounded-xl">
           <FaFacebookSquare size={28} style={{color:'white'}}/>
           </a>
           <a
