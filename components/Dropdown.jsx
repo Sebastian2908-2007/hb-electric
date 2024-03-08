@@ -2,12 +2,13 @@
 import { useState,useEffect, useRef  } from 'react';
 import { FaBarsStaggered } from "react-icons/fa6";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 //hover coler #fde1e2
 const Dropdown = () => {
-
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef();
-
+  const displayContact = pathname === '/Contact' ;
     // Close the dropdown when a link is clicked
     const closeDropdown = () => {
         setIsOpen(false);
@@ -69,7 +70,7 @@ const Dropdown = () => {
           aria-labelledby="options-menu" 
           ref={dropdownRef}>
         
-         <>
+         
 
          <Link
          onClick={() => {
@@ -93,9 +94,11 @@ const Dropdown = () => {
             >
               Contact Us
             </Link>
-
-
-         <span   
+         <Link
+         onClick={() => {
+          closeDropdown();
+         }}
+         href='/'   
             className="
             block 
             px-4 
@@ -105,6 +108,27 @@ const Dropdown = () => {
             hover:bg-[#b46f40]
             hover:text-[#d9b061]
             
+             
+            font-[encyclopaediea]
+            " 
+           
+          
+            >
+              Home
+            </Link>
+
+{!displayContact ?
+<>
+         <span   
+            className="
+            block 
+            px-4 
+            py-2 
+            text-[.8em] 
+            text-[#164775] 
+            hover:bg-[#b46f40]
+            hover:text-[#d9b061]
+            cursor-pointer
              
             font-[encyclopaediea]
             " 
@@ -129,7 +153,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-            
+            cursor-pointer
              
             font-[encyclopaediea]
             " 
@@ -145,7 +169,7 @@ const Dropdown = () => {
             >
            Power Distribution
             </span>
-            </>
+           
             
             <span 
              
@@ -157,7 +181,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40]
             hover:text-[#d9b061]
-             
+             cursor-pointer
             font-[encyclopaediea]
             " 
             role="menuitem" 
@@ -181,7 +205,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-           
+           cursor-pointer
             font-[encyclopaediea]
             " 
             role="menuitem" 
@@ -205,7 +229,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-           
+           cursor-pointer
             font-[encyclopaediea]
             " 
             role="menuitem" 
@@ -230,7 +254,7 @@ const Dropdown = () => {
              text-[#164775] 
              hover:bg-[#b46f40] 
              hover:text-[#d9b061]
-            
+            cursor-pointer
             font-[encyclopaediea]
              " 
              onClick={() => {
@@ -253,7 +277,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-            
+            cursor-pointer
             font-[encyclopaediea]
             " 
             role="menuitem" 
@@ -277,7 +301,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-           
+           cursor-pointer
             font-[encyclopaediea]
             " 
             role="menuitem" 
@@ -302,7 +326,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-           
+           cursor-pointer
            
             font-[encyclopaediea]
             " 
@@ -328,7 +352,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-           
+           cursor-pointer
            
             font-[encyclopaediea]
             " 
@@ -353,7 +377,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-          
+          cursor-pointer
             font-[encyclopaediea]
             " 
             role="menuitem" 
@@ -377,7 +401,7 @@ const Dropdown = () => {
             text-[#164775] 
             hover:bg-[#b46f40] 
             hover:text-[#d9b061]
-            
+            cursor-pointer
              
             font-[encyclopaediea]
             " 
@@ -393,6 +417,9 @@ const Dropdown = () => {
             >
              Tenant Improvements
             </span>
+           </>
+            : null}
+             
           </div>
         </div>
       )}

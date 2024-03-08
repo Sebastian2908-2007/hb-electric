@@ -4,10 +4,10 @@ import hero from '../public/second-body.webp';
 import firstBody from '../public/first-body.webp';
 import consider from '../public/considerations3.webp';
 import { motion } from "framer-motion";
-import { useRef } from "react";
+
 
 export default function Home() {
-  const scrollRef = useRef(null);
+  
   return (
     <>
     <div className="
@@ -90,7 +90,7 @@ export default function Home() {
     border-[#b46f40]
     shadow-lg
     border
-    md:border-4
+    md:border-0
     rounded-md
     min-[1024px]:mt-14
     min-[1024px]:flex
@@ -296,7 +296,7 @@ export default function Home() {
     rounded-md
     shadow-lg
     border
-    md:border-4
+    md:border-0
     min-[1024px]:flex
     min-[1024px]:flex-col
     min-[1024px]:items-center
@@ -394,7 +394,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     min-[1024px]:mt-12
     min-[1024px]:mb-12
     ">
-    <ul className="list-disc pl-6 min-[1024px]:w-[50%] font-[gillsans]">
+    <ul className="list-disc pl-6 font-[gillsans] min-[1024px]:grid min-[1024px]:grid-cols-2">
       <li>
     <motion.div
             initial="hidden"
@@ -406,7 +406,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[90%]">
           <span className='font-bold text-[#164775]'>License and Certification:</span>
         &nbsp;
         Verify necessary licenses and certifications for commercial electrical work in Utah.
@@ -424,7 +424,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[80%]">
           <span className='font-bold text-[#164775]'>Experience:</span>
         &nbsp;
         Evaluate experience with similar projects to ensure proficiency in commercial spaces.
@@ -442,7 +442,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[80%]">
           <span className='font-bold text-[#164775]'>References and Reviews:</span>
         &nbsp;
         Seek client references and reviews to assess reputation and work quality.
@@ -460,7 +460,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[80%]">
           <span className='font-bold text-[#164775]'>Insurance Coverage:</span>
         &nbsp;
         Confirm adequate insurance coverage, including liability and worker's compensation.
@@ -478,7 +478,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[80%]">
           <span className='font-bold text-[#164775]'>Communication Skills:</span>
         &nbsp;
         Assess communication and responsiveness for effective collaboration.
@@ -496,7 +496,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[80%]">
           <span className='font-bold text-[#164775]'>Transparent Cost Estimate:</span>
         &nbsp;
         Request a detailed cost estimate for accurate budget planning.
@@ -514,7 +514,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
               hidden: { opacity: 0, scale: 0 }
             }}
          >
-        <div className="mb-4">
+        <div className="mb-4 min-[1024px]:w-[80%]">
           <span className='font-bold text-[#164775]'>Familiarity with Local Codes:</span>
         &nbsp;
         Confirm knowledge of and compliance with local building codes in Utah.
@@ -558,7 +558,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
     p-4
      shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="ei"
@@ -615,7 +615,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="pd"
@@ -672,7 +672,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="emes"
@@ -729,7 +729,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="sss"
@@ -784,7 +784,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="dcs"
@@ -839,7 +839,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="hes"
@@ -893,7 +893,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="ees"
@@ -948,7 +948,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="ldc"
@@ -1004,7 +1004,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="em"
@@ -1059,7 +1059,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="cci"
@@ -1113,7 +1113,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
       shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="si"
@@ -1167,7 +1167,7 @@ When hiring a commercial electrical contractor in Utah, it's crucial to consider
      p-4
      shadow-lg
      border
-     md:border-4
+     md:border-0
      h-full
     " 
     id="ti"
